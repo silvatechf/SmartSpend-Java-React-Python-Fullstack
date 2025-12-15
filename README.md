@@ -1,8 +1,13 @@
-SmartSpend: Predictive Financial Management (Full-Stack)
+# SmartSpend: Predictive Financial Management (Full-Stack)
+
+<img src="assets/imgsp1.png" alt="screenshot GRC" width="100%" />
 
 SmartSpend is a modern personal finance platform designed to move beyond simple expense tracking to provide proactive and predictive financial management. The project demonstrates a complete, scalable full-stack architecture, from robust Java backend security to a responsive, insight-driven user experience.
 
 🌟 Application Highlights & Value Proposition
+
+<img src="assets/imgsp3.png" alt="screenshot GRC" width="100%" />
+
 
 1. 🧠 AI-Powered Spending Forecast (Innovation Core)
 
@@ -20,6 +25,11 @@ The core feature transforms user engagement by providing crucial forward-looking
 
     Savings Goals: A dedicated section to visualize progress towards long-term financial objectives (e.g., Emergency Fund, Vacation).
 
+   <div align="center">
+    <img src="assets/imgsp2.png" alt="Imagem 1" style="width: 48%; margin-right: 1%;"/>
+    <img src="assets/imgsp4.png" alt="Imagem 2" style="width: 48%; margin-left: 1%;"/>
+</div>
+
 💻 Architecture and Technical Expertise
 
 
@@ -30,6 +40,7 @@ The core feature transforms user engagement by providing crucial forward-looking
 | **Frontend**               | React, TypeScript, Tailwind CSS, Recharts         | High-performance Single Page Application (SPA) development, strong TypeScript typing, and modular, component-based architecture focused on modern UI/UX.     |
 | **Security / Integration** | JWT, CORS Configuration                           | Proven ability to secure API endpoints, manage token-based sessions, and resolve complex CORS issues across multiple development environments.               |
 
+<img src="assets/imgsp5.png" alt="screenshot GRC" width="100%" />
 
 🚀 Getting Started
 
