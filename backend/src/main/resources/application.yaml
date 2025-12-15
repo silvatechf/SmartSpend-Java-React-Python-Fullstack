@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/smartspend_db
+    username: postgres
+    password: mypassword
+    hikari:
+      pool-name: SmartSpendCP
+      maximum-pool-size: 10
+      minimum-idle: 5
+  jpa:
+    hibernate:
+      # CORREÇÃO CRÍTICA TEMPORÁRIA: Mude para 'create-drop' para forçar a 
+      # recriação das tabelas com o tipo BIGINT/Long correto (resolvendo o erro UUID).
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  web:
+    # CORREÇÃO CORS (Essencial para o Frontend React)
+    cors:
+      allowed-origins: "http://localhost:5173"
+      allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
+      allowed-headers: "*"
+      allow-credentials: true
+      max-age: 3600
+
+# CONFIGURAÇÕES JWT (Fora do bloco 'spring')
+jwt:
+  secret-key: C3DqUv8wXy2zAc4bEdFgHjKlMnOpQrStUvWxYzA1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6
+  expiration-ms: 86400000 # 24 horas

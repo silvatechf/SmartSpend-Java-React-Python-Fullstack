@@ -1,0 +1,36 @@
+// tsconfig.json (Seção compilerOptions CORRIGIDA)
+
+{
+  "compilerOptions": {
+    // 1. Atualizar Target para uma versão moderna (pode ser ES2022 ou ESNext)
+    "target": "ESNext",
+    
+    // 2. Corrigir o conjunto de bibliotecas (usando opções mais aceitas)
+    "lib": ["ES2022", "DOM", "DOMIterable"],
+    
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false, 
+    "noUnusedParameters": false, 
+    "noFallthroughCasesInSwitch": true,
+
+    /* CRUCIAL: Configuração do Alias (Caminhos) */
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["src"]
+}

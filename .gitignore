@@ -1,0 +1,61 @@
+
+
+```gitignore
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+*~
+*.log
+*.sqlite
+*.sql
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------------------------------------------------
+# 2. BACKEND  (Java/Spring Boot)
+# ----------------------------------------------------------------------
+# Maven
+**/target/
+# IntelliJ/IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+# Eclipse
+.metadata
+.classpath
+.project
+tmp/
+
+smartspend-backend-*-SNAPSHOT.jar.original
+
+# ----------------------------------------------------------------------
+# 3. FRONTEND  (Node/React/Vite)
+# ----------------------------------------------------------------------
+# Node modules:
+node_modules/
+
+dist/
+build/
+
+.vite/
+
+.env.local
+.env.*.local
+--------------------------------------------------------------
+
+.DS_Store
+
+Thumbs.db
+```
