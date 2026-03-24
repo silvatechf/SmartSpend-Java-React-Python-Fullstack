@@ -1,4 +1,4 @@
-// src/pages/DashboardPage.tsx - VERSÃO FINAL COM ALERTA DE IA INTEGRADO
+
 import React, { useState, useCallback } from 'react';
 import { useFinance } from '../hooks/useFinance';
 import { 
@@ -10,7 +10,7 @@ import { BarChart as RechartsBar, Bar, PieChart as RechartsPie, Pie, XAxis, YAxi
 import { CategoryKey, Transaction, Category, AnalysisResult } from '../data/financeTypes';
 import { useAuth } from '../context/AuthContext'; 
 
-// --- Sub-Componentes UI ---
+
 
 interface CardProps { children: React.ReactNode; className?: string; isDarkMode: boolean; }
 const GlassCard: React.FC<CardProps> = ({ children, className = '', isDarkMode }) => (
@@ -57,7 +57,7 @@ interface IconCardProps {
     showTrend?: boolean;
     isDarkMode: boolean; 
     
-    // --- NOVAS PROPRIEDADES PARA O ALERTA DE IA ---
+    
     isForecast?: boolean;
     budgetValue?: number; // O limite do orçamento
 }
@@ -270,7 +270,7 @@ const DashboardPage: React.FC = () => {
         }, 3000); 
     }, [selectedFile, addTransaction, currency]);
     
-    // ✅ CORREÇÃO: Funções de atualização do Budget
+    
     const handleBudgetUpdate = () => {
         const value = prompt(`Enter new budget limit (current: ${currency}${budgetLimit.toFixed(2)}):`);
         
